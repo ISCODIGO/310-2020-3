@@ -40,6 +40,32 @@ public class Conjunto {
 		return aux;
 	}
 	
+	public Conjunto interseccion(Conjunto otro) {
+		Conjunto aux = new Conjunto(this.universo.length);
+		
+		for (int i = 0; i < universo.length; i++) {
+			if (this.universo[i] && otro.universo[i]) {
+				aux.universo[i] = true;
+			}
+		}
+		
+		return aux;
+	}
+	
+	public Conjunto complemento() {
+		Conjunto aux = new Conjunto(this.universo.length);
+		
+		for (int i = 0; i < this.universo.length; i++) {
+			aux.universo[i] = !this.universo[i];
+		}
+		
+		return aux;
+	}
+	
+	public boolean pertenece(int valor) {
+		return this.universo[valor];
+	}
+	
 	@Override
 	public String toString() {
 		// Se utilizará StringBuilder para mejorar el uso
