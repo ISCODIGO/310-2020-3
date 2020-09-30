@@ -38,6 +38,8 @@ public class Conjunto {
 		}
 		
 		return aux;
+		
+		// 3 + 50n
 	}
 	
 	public Conjunto interseccion(Conjunto otro) {
