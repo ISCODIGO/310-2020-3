@@ -1,4 +1,4 @@
-package simple;
+package simple.integer;
 
 public class MainLista {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package simple;
+package simple.integer;
 
 public class Lista {
 	private Nodo primero;
