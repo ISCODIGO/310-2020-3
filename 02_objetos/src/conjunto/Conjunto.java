@@ -26,10 +26,15 @@ public class Conjunto {
 	public void remover(int valor) {
 		universo[valor] = false;
 	}
-	
+		
 	// Se asume que ambos conjuntos tienen el mismo universo
 	public Conjunto union(Conjunto otro) {
 		Conjunto aux = new Conjunto(this.universo.length);
+		
+		// Validacion del objeto
+		if (otro == null) {
+			return aux;
+		}
 		
 		for (int i = 0; i < universo.length; i++) {
 			if (this.universo[i] || otro.universo[i]) {
@@ -38,8 +43,6 @@ public class Conjunto {
 		}
 		
 		return aux;
-		
-		// 3 + 50n
 	}
 	
 	public Conjunto interseccion(Conjunto otro) {

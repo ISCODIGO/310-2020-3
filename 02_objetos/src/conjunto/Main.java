@@ -11,10 +11,10 @@ public class Main {
 		Conjunto c2 = new Conjunto(10);
 		c2.agregar(5);
 		c2.agregar(2);
-		c2.agregar(9);
+		c2.agregar(9);		
 
 		System.out.println("Union de dos conjuntos...");
-		Conjunto c3 = c1.union(c2);
+		Conjunto c3 = c1.union(null);
 		System.out.println(c3);
 		
 		System.out.println("Interseccion de dos conjuntos...");
