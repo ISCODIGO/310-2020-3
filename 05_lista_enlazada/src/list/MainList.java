@@ -26,6 +26,5 @@ public class MainList {
 		arrayList.add("tercero");
 		
 		List<String> list2 = arrayList;
-		
 	}
 }

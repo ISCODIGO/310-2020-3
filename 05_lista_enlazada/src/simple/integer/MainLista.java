@@ -2,6 +2,11 @@ package simple.integer;
 
 public class MainLista {
 	public static void main(String[] args) {
+		
+		// test unitarios
+		// junit
+		// QA
+		
 		testVacia();				
 		testInsertarPrimero();
 		testInsertarUltimo();
@@ -68,6 +73,8 @@ public class MainLista {
 		lista.insertarPrimero(10);
 		lista.insertarPrimero(20);
 		lista.insertarUltimo(30);
+		
+		//20-10-30
 		
 		eliminado1 = lista.eliminarUltimo();		
 		System.out.println(String.format("Eliminando 30: %d", eliminado1));
