@@ -4,24 +4,24 @@ import java.time.Duration;
 import java.time.Instant;
 
 public class Cronometro {
-	private Instant startTime;
-	private Instant endTime;
+	private Instant inicio;
+	private Instant fin;
 	
 	public Cronometro() {
 		iniciar();
 	}
 	
 	public void iniciar() {
-		startTime = Instant.now();
+		inicio = Instant.now();
 	}
 	
 	public void finalizar() {
-		endTime = Instant.now();
+		fin = Instant.now();
 	}
 	
 	@Override
 	public String toString() {
-		return "" + Duration.between(startTime, endTime).toNanos() + " ns";
+		return "" + Duration.between(inicio, fin).toNanos() + " ns";
 	}
 	
 	
