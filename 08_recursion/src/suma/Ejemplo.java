@@ -1,4 +1,4 @@
-package recursion;
+package suma;
 
 public class Ejemplo {
 	public static void main(String[] args) {

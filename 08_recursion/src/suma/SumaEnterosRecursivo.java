@@ -4,14 +4,10 @@
  * llamado se llenará (Stack Overflow) con cierta cantidad.
  */
 
-package recursion;
+package suma;
 
 public class SumaEnterosRecursivo {
-	public static void main(String[] args) {
-		System.out.println(suma(100_000));
-	}
-	
-	public static int suma(int n) {
+	public static int sumar(int n) {
 		// Caso base
 		if (n == 1) {
 			return 1;
@@ -23,6 +19,6 @@ public class SumaEnterosRecursivo {
 		}
 		
 		// Caso progresivo
-		return n + suma(n - 1);
+		return n + sumar(n - 1);
 	}
 }

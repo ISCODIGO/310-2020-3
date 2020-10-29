@@ -6,14 +6,10 @@
  * posible sustituirlo por una iteración sencilla. 
  */
 
-package recursion;
+package suma;
 
 public class SumaEnterosTailRecursivo {
-	public static void main(String[] args) {
-		System.out.println(suma(100_000));
-	}
-
-	public static int suma(int n) {
+	public static int sumar(int n) {
 		return sumaRecursiva(n, 0);
 	}
 
