@@ -8,10 +8,11 @@ public class Ejemplo {
 	public static void contar(int n) {
 		System.out.println(n);
 		
-		// [n < -12000] no logra ejecutar el caso progresivo
-		// [n > 12000] logra acercarnos al caso base
+		// (n < -1000) no logra ejecutar el caso progresivo
+		// (n < 1000) logra acercarnos al caso base
+		// (n > 1000) no logra ejecutar el caso progresivo
 		
-		if (n < 12000) { // Caso Base
+		if (n < -1000) { // Caso Base
 			contar(n+1); // Caso progresivo/recursiva
 		}
 	}
