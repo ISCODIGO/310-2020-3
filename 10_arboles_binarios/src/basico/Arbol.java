@@ -39,6 +39,24 @@ public class Arbol {
 		size++;
 		return nuevo;
 	}
+	
+	public int calcularNodos() {
+		return this.calcularNodos(this.raiz);
+	}
+	
+	private int calcularNodos(Nodo n) {
+		// Caso base: no contar un nodo inexistente
+		if (n == null) {
+			return 0;
+		}
+		
+		// Caso recursivo: contarse el nodo (valido) + hijos izq + hijo der.
+		return 1 + calcularNodos(n.izquierdo) + calcularNodos(n.derecho);
+	}
+	
+	public int getSize() {
+		return this.size;
+	}
 		
 	public boolean esRaiz(Nodo n) {
 		return n == raiz;
@@ -49,7 +67,7 @@ public class Arbol {
 	 =========================================================================*/
 	
 	public List<Character> preorden() {
-		ArrayList<Character> listado = new ArrayList<Character>();
+		List<Character> listado = new LinkedList<Character>();
 		preorden(this.raiz, listado);
 		return listado;
 	}
@@ -68,7 +86,7 @@ public class Arbol {
 	}
 	
 	public List<Character> enorden() {
-		ArrayList<Character> listado = new ArrayList<Character>();
+		List<Character> listado = new LinkedList<Character>();
 		enorden(this.raiz, listado);
 		return listado;
 	}
@@ -88,7 +106,7 @@ public class Arbol {
 	}
 	
 	public List<Character> postorden() {
-		ArrayList<Character> listado = new ArrayList<Character>();
+		List<Character> listado = new LinkedList<Character>();
 		postorden(this.raiz, listado);
 		return listado;
 	}
