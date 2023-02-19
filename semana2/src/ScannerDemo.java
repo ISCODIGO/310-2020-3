@@ -21,13 +21,6 @@ public class ScannerDemo {
 
 
          */
-        // Imprime n veces (args[1]) un mensaje (args[0])
-        /*String mensaje = args[0];
-        int n = Integer.parseInt(args[1]);
-
-        for(int i = 1; i <= n; i++) {
-            System.out.println(mensaje);
-        }*/
 
         Scanner entrada = new Scanner(System.in);
         System.out.print("Escriba una palabra: ");

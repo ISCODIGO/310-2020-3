@@ -1,3 +1,10 @@
+/*
+
+Scanner permite introducir mediante la entrada estandar datos a un programa.
+Ademas de esto es posible ingresar por medio de un String y tambien con la
+apertura de un fichero.
+
+ */
 import java.util.Scanner;
 
 public class NextDemo {

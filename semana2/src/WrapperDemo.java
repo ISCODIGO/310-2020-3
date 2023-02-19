@@ -12,6 +12,10 @@ public class WrapperDemo {
         long                 Long
         float                Float
         double               Double
+
+        Los wrapper permiten que tener un objeto que corresponda con un primitivo
          */
+
+        Integer objetoEntero = 10;
     }
 }
