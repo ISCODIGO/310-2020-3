@@ -6,6 +6,7 @@ public class ForDemo {
             System.out.println(i+" -> "+s.charAt(i));
         }
 
+        // version foreach
         for(char caracter: s.toCharArray()) {
             System.out.print(caracter + "-");
         }

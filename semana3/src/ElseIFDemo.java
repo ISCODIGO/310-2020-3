@@ -7,6 +7,7 @@ public class ElseIFDemo {
         int edad = entrada.nextInt();
 
         // evaluacion 1
+        System.out.println("Segun la pelicula Midsommar usted esta...");
         if (edad < 0) {
             System.out.println("Edad negativa?");
         } else if (edad <= 18) {
@@ -21,7 +22,7 @@ public class ElseIFDemo {
             System.out.println("Muerto");
         }
 
-        // evaluacion 2
+        // evaluacion 2: es independiente de la primera
         if (edad % 2 == 0) {
             System.out.println("Edad par");
         }
