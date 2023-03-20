@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CalcController">
+   <top>
+      <Label text="Calculadora v1" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+   </top>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="291.0" prefWidth="103.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#sumar" text="+" />
+            <Button mnemonicParsing="false" onAction="#restar" text="-" />
+            <Button mnemonicParsing="false" text="x" />
+            <Button mnemonicParsing="false" text="/" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="operando1" promptText="Primer valor" />
+            <TextField fx:id="operando2" promptText="Segundo Valor" />
+            <Label fx:id="resultado" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefWidth="350.0" text="0">
+               <font>
+                  <Font size="50.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
