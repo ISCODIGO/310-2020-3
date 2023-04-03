@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ImageController">
+   <center>
+      <ImageView fitHeight="302.0" fitWidth="406.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@img/pexels-stacey-koenitz-r-2425011.jpg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
