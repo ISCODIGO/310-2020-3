@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class PruebaController {
     int clics = 0;
     @FXML
     private Label welcomeText;

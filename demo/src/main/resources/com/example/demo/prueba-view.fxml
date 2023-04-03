@@ -5,7 +5,7 @@
 <?import javafx.scene.text.*?>
 
 
-<VBox prefHeight="240.0" prefWidth="450.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+<VBox prefHeight="240.0" prefWidth="450.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PruebaController">
    <children>
       <Label text="Escena 1">
          <font>
